@@ -1,30 +1,23 @@
 # Project Setup
+````
+composer install  
+npm install   
+cp .env.example .env
 
-composer install  <br>
-npm install   <br>
-cp .env.example .env<br>
-Create a file database.sqlite inside folder database <br>
-Change those lines in your .env <br>
-DB_CONNECTION=sqlite <br>
-DB_HOST=127.0.0.1<br>
-DB_PORT=3306<br>
-DB_DATABASE=path\to\your\project\database\database.sqlite<br>
-DB_USERNAME=root<br>
-DB_PASSWORD=<br>
+Create a file database.sqlite inside folder database 
+Change those lines in your .env 
+DB_CONNECTION=sqlite 
+DB_DATABASE=path\to\your\project\database\database.sqlite
 
-npm install <br>
-php artisan key:generate <br>
- php artisan migrate  <br>
- php artisan db:seed --class=UsersTableSeeder<br>
-
+php artisan key:generate 
+php artisan migrate 
+php artisan db:seed --class=UsersTableSeeder
+````
  ## Run Project
- npm run dev<br>
- php artisan serve<br>
-
-
-## Run Tests
-
-php artisan test
+ ````
+ npm run dev
+ php artisan serve
+ ````
 
 # Website Preview
 ## Home
@@ -36,5 +29,3 @@ php artisan test
 ## Delete User
 ![Alt Text](./images/delete-user.png)
 
-## Test Result
-![Alt Text](./images/Test.png)
